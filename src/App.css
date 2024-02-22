@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100&display=swap');
+.body{
+  background-color: black;
+}
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .reviews {
+    display: flex;
+  }
+  
+  .review-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px; 
+  }
+  
+  .review-poster {
+    width: 200px; 
+    height: 300px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .review-container.hovered .review-poster {
+    transform: scale(1.2); 
+    background-color: black;
+    opacity: 0.2; 
+  }
+  .review-container.hovered .text-overlay {
+    opacity: 1;
+  }
+
+
+  .tab-options{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-bottom: 20px;
+    cursor:pointer;
+  }
+  
+  .tab-option.active::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #3498db; 
+    margin-top: 5px; 
+  }
+   
+
+  .fade-container img{
+    padding-left: 80px;
+    margin:60px;
+  }
+  .fade-container a{
+    color: yellow;
+    text-decoration: none;
+    padding-left: 150px;
+    font-size: 30px;
+  }
+  .fade-container p{
+    color: white;
+    padding-left: 100px;
+  }
+  
+.song-poster{
+  padding-bottom: 10px;
+  width: 200px; 
+  height: 200px;
+ margin-right: 45px;
+}
+
+/*swiperslider--------
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 400px;
+  height:600px;
+  
+}
+*/
+
+
